@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's.com</title>
+
+    <!-- Tailwind and Daisyui CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Manrope font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind custom CSS here -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'theme-color': '#FF4240'
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <!-- Custom CSS here -->
+    <style>
+        body {
+            font-family: "Manrope", sans-serif;
+            border: 1px solid red;
+            padding-bottom: 100px;
+        }
+    </style>
+
+
+</head>
+
+<body class="mx-2 lg:mx-32">
+    <header>
+        <!-- navbar ssection starts here -->
+        <nav class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey<span
+                            class="text-theme-color">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-semibold">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-6">
+                    <img src="Images/Frame.svg" alt="" class="hidden lg:visible">
+                    <a class="btn bg-theme-color text-white text-lg lg:text-xl font-bold ">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar ends here -->
+
+        <!-- carousal starts here -->
+        <div class="my-5 lg:h-[550px]">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full ">
+                    <img class="rounded-2xl" src="Images/banner2.webp" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container">
+
+        <!-- Professional hocky club section -->
+        <section class="my-8 lg:my-32  text-center">
+            <hr class="border border-dashed border-[#13131833]">
+            <div class="py-8 space-y-6">
+                <h1 class="text-4xl font-extrabold">Professional Hockeys Club</h1>
+                <p class="w-[95%] lg:w-[600px] mx-auto">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                    sit nullam proin.
+                </p>
+            </div>
+            <hr class="border border-dashed border-[#13131833]">
+        </section>
+
+        <!-- Loading sectiion starts -->
+        <section>
+            <span class="loading loading-spinner text-error text-7xl">hello world</span>
+
+        </section>
+
+        <!-- Program section -->
+        <section class="my-8 lg:my-16  text-center">
+            <hr class="border border-dashed border-[#13131833]">
+            <div class="py-8 space-y-6">
+                <h1 class="text-4xl font-extrabold">Program Sections</h1>
+                <p class="w-[95%] lg:w-[600px] mx-auto">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                    sit nullam proin.
+                </p>
+            </div>
+            <hr class="border border-dashed border-[#13131833]">
+        </section>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
